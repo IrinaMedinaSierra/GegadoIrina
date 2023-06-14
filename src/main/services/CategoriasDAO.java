@@ -12,7 +12,7 @@ public class CategoriasDAO extends Conexion {
     String sql;
     Connection con = conectar();
     public boolean create (Categorias a) {
-        sql = "INSERT INTO categoria (idC, nombreC) VALUES (?,?);";
+        sql = "INSERT INTO categorias (idC, nombreC) VALUES (?,?);";
         try {
             PreparedStatement pt = con.prepareStatement(sql);
             pt.setInt(1, a.getIdC());
@@ -28,7 +28,7 @@ public class CategoriasDAO extends Conexion {
     }
 
     public boolean read (Categorias a) {
-        sql = "SELECT * FROM categoria WHERE idC=? and nombreC=?;";
+        sql = "SELECT * FROM categorias WHERE idC=? and nombreC=?;";
         try {
             PreparedStatement pt = con.prepareStatement(sql);
             pt.setInt(1, a.getIdC());
@@ -49,7 +49,7 @@ public class CategoriasDAO extends Conexion {
 
     }
     public boolean delete (int idC) {
-        sql = "DELETE FROM categoria WHERE idC=?;";
+        sql = "DELETE FROM categorias WHERE idC=?;";
         try {
            PreparedStatement pt = con.prepareStatement(sql);
            pt.setInt(1, idC);
