@@ -56,7 +56,7 @@
     </div>
 </div>
     <div class="col-md-4">
-        <button class="btn btn-warning" type="submit">Crear Categoría</button>
+        <button class="btn btn-primary" type="submit">Crear Categoría</button>
     </div>
 </form>
 </div>
