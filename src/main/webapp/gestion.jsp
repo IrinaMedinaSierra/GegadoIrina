@@ -12,5 +12,6 @@
 </head>
 <body>
 
+    <a href="ControllerCateg?opcion=categorias" >Categorias</a>
 </body>
 </html>

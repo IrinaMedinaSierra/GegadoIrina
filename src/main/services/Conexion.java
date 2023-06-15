@@ -5,7 +5,7 @@ public class Conexion {
     private Connection con;
     private final String url="jdbc:mysql://localhost:3306/gegado?useUnicode=true&characterEncoding=utf-8";
     private  final String user="root";
-    private final String pass="";
+    private final String pass="Qzec7139.";
     public Connection conectar(){
         // estos valores no cambian, por lo cual podrian ser final (Constantes en los atributos de la clase)
         // insertar en url utf-8 para que reconozca los caracteres especiales.

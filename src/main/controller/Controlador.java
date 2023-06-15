@@ -33,7 +33,6 @@ public class Controlador extends HttpServlet {
               if (resultado) {
                   request.getRequestDispatcher("gestion.jsp").forward(request, response);
               }else {
-
                   msnError = "Error de Usuario o Contraseña";
                   request.setAttribute("msnError", msnError);
                   request.getRequestDispatcher("index.jsp").forward(request, response);

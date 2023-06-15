@@ -33,7 +33,7 @@ public class UsuarioDAO extends Conexion {
 
     public boolean read(Usuario u) {
 
-        sql = "SELECT * FROM usuario WHERE userN=? and passU=?;";
+        sql = "SELECT * FROM usuarios WHERE userN=? and passU=?;";
         Connection con = conectar();
         try {
             PreparedStatement pt = con.prepareStatement(sql);
