@@ -19,8 +19,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-   </style>
     }
+   </style>
 </head>
 <body>
 <div class="container m-auto text-center my-4">
