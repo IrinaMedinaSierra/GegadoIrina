@@ -24,11 +24,13 @@ public class ControllerCateg extends HttpServlet {
           request.setAttribute("icon", icon);
           request.getRequestDispatcher("categoria.jsp").forward(request, response);
       }
-
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        String nombreC=request.getParameter("nombreC");
+        String  idT=request.getParameter("idT");
+        String icon=request.getParameter("icon");
+        System.out.println(nombreC +" " + idT +" "+ icon);
     }
 }
